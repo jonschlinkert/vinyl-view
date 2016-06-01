@@ -1,0 +1,40 @@
+{
+  "name": "vinyl-view",
+  "description": "Extends vinyl-view with render and compile methods, and properties used for rendering.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/vinyl-view",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/vinyl-view",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/vinyl-view/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-format-md": "*",
+    "mocha": "^2.5.3"
+  },
+  "keywords": [],
+  "verb": {
+    "layout": "default",
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "related": {
+      "list": []
+    },
+    "reflinks": [
+      "verb"
+    ]
+  }
+}
