@@ -1,6 +1,6 @@
 {
   "name": "vinyl-view",
-  "description": "Extends vinyl-view with render and compile methods, and properties used for rendering.",
+  "description": "Extends vinyl with render and compile methods, and properties used for rendering templates.",
   "version": "0.1.0",
   "homepage": "https://github.com/jonschlinkert/vinyl-view",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
@@ -10,7 +10,8 @@
   },
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "utils.js"
   ],
   "main": "index.js",
   "engines": {
@@ -19,22 +20,49 @@
   "scripts": {
     "test": "mocha"
   },
-  "dependencies": {},
+  "dependencies": {
+    "arr-union": "^3.1.0",
+    "define-property": "^0.2.5",
+    "engine-base": "^0.1.2",
+    "isobject": "^2.1.0",
+    "lazy-cache": "^2.0.1",
+    "mixin-deep": "^1.1.3",
+    "vinyl-item": "^0.1.0"
+  },
   "devDependencies": {
-    "gulp-format-md": "*",
+    "event-stream": "^3.3.2",
+    "gulp-format-md": "^0.1.9",
     "mocha": "^2.5.3"
   },
-  "keywords": [],
+  "keywords": [
+    "assemble",
+    "collection",
+    "compile",
+    "context",
+    "engine",
+    "handlebars",
+    "render",
+    "template",
+    "templates",
+    "view",
+    "views",
+    "vinyl"
+  ],
   "verb": {
+    "toc": false,
     "layout": "default",
+    "tasks": [
+      "readme"
+    ],
     "plugins": [
       "gulp-format-md"
     ],
-    "related": {
-      "list": []
-    },
     "reflinks": [
-      "verb"
-    ]
+      "verb",
+      "vinyl"
+    ],
+    "lint": {
+      "reflinks": true
+    }
   }
 }
