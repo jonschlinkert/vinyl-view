@@ -11,6 +11,8 @@
   "license": "MIT",
   "files": [
     "index.js",
+    "LICENSE",
+    "README.md",
     "utils.js"
   ],
   "main": "index.js",
@@ -30,7 +32,7 @@
     "vinyl-item": "^0.1.0"
   },
   "devDependencies": {
-    "event-stream": "^3.3.2",
+    "event-stream": "^3.3.4",
     "gulp-format-md": "^0.1.9",
     "mocha": "^2.5.3"
   },
