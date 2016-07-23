@@ -246,10 +246,9 @@ utils.define(View.prototype, 'layout', {
  */
 
 View.context = function(locals) {
-  if (this._context) return this._context;
-
   if (typeof locals === 'function') {
-    return locals.call(this, this);
+    var args = [].slice.call(arguments, 1);
+    return locals.apply(this, args);
   }
 
   if (arguments.length > 1) {
