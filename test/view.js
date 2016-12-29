@@ -848,7 +848,7 @@ describe('View', function() {
         contents: val
       });
       delete view.base;
-      assert.equal(view.inspect(), '<View "/test/test.coffee" <Buffer 74 65 73 74>>');
+      assert.equal(view.inspect(), '<View "test/test.coffee" <Buffer 74 65 73 74>>');
       cb();
     });
 
@@ -1141,7 +1141,7 @@ describe('View', function() {
         });
         cb(new Error('expected an error'));
       } catch (err) {
-        assert.equal(err.message, 'path should be string');
+        assert.equal(err.message, 'path should be a string.');
         cb();
       }
     });
@@ -1156,7 +1156,7 @@ describe('View', function() {
         view.path = null;
         cb(new Error('expected an error'));
       } catch (err) {
-        assert.equal(err.message, 'path should be string');
+        assert.equal(err.message, 'path should be a string.');
         cb();
       }
     });
