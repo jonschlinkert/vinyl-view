@@ -1,7 +1,7 @@
 {
   "name": "vinyl-view",
   "description": "Extends vinyl with render and compile methods, and properties used for rendering templates.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "homepage": "https://github.com/jonschlinkert/vinyl-view",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/vinyl-view",
