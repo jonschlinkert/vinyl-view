@@ -245,23 +245,19 @@ utils.define(View.prototype, 'layout', {
  * @api public
  */
 
-View.context = function(locals) {
+View.context = function(data, locals) {
   if (this._context) return this._context;
 
+  if (typeof locals === 'undefined' || typeof data === 'function') {
+    locals = data;
+    data = {};
+  }
+
   if (typeof locals === 'function') {
-    var args = [].slice.call(arguments, 1);
-    return locals.apply(this, args);
+    return locals.call(this, data);
   }
 
-  if (arguments.length > 1) {
-    locals = [].concat.apply([], [].slice.call(arguments));
-  } else {
-    locals = utils.arrayify(locals);
-  }
-
-  locals.unshift(this.locals);
-  locals.push(this.data);
-  return utils.merge.apply(utils.merge, locals);
+  return utils.merge({}, this.locals, data, locals, this.data);
 };
 
 /**
