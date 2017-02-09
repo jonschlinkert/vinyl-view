@@ -24,9 +24,9 @@
     "arr-union": "^3.1.0",
     "define-property": "^0.2.5",
     "engine-base": "^0.1.2",
+    "extend-shallow": "^2.0.1",
     "isobject": "^3.0.0",
     "lazy-cache": "^2.0.2",
-    "mixin-deep": "^1.1.3",
     "vinyl-item": "^1.0.0"
   },
   "devDependencies": {

@@ -13,7 +13,7 @@ require('arr-union', 'union');
 require('define-property', 'define');
 require('engine-base', 'engine');
 require('isobject', 'isObject');
-require('mixin-deep', 'merge');
+require('extend-shallow', 'merge');
 require = fn;
 
 /**
